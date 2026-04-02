@@ -3,9 +3,7 @@
 Шаблон личного сайта-портфолио для IT-специалистов.
 Заполни один Markdown-файл — получи готовый сайт.
 
-👉 [Посмотреть демо](https://your-demo-link.netlify.app)
-
-![Скриншот шаблона](./screenshot.png)
+👉 [Посмотреть демо](https://az-portfolio-test.netlify.app/)
 
 ---
 
@@ -63,7 +61,6 @@
 ```bash
 git clone https://github.com/alexzah-droid/astro-portfolio-template.git
 cd astro-portfolio-template
-npm run setup
 npm install
 npm run dev
 ```
@@ -73,10 +70,10 @@ npm run dev
 ---
 
 ## Структура проекта
+
 ```
 astro-portfolio-template/
-├── content.example.md              # пример заполнения
-├── content.md                      # ← твои данные здесь (создаётся после npm run setup)
+├── content.md                      # ← твои данные здесь
 ├── src/
 │   └── assets/
 │       └── images/

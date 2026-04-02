@@ -14,8 +14,7 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "setup": "node setup.js",
-    "dev": "astro dev",
+"dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
