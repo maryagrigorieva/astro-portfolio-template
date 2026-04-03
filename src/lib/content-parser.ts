@@ -17,6 +17,7 @@ export interface Info {
   tagline: string;
   photo: string;
   location: string;
+  experience_view: 'timeline' | 'cards';
   contacts: ContactInfo;
 }
 

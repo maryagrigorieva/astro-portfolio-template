@@ -13,6 +13,7 @@ import profilePhoto from '../assets/images/profile.jpg';
 import { getInfo } from '../lib/content-parser';
 
 const info = getInfo();
+const useTimeline = (info.experience_view ?? 'timeline') === 'timeline';
 
 const metaTitle = `${info.name} — ${info.role}`;
 const metaDescription = info.tagline;
@@ -151,16 +152,18 @@ const metaDescription = info.tagline;
       <!-- Bio text -->
       <About />
 
-      <!-- Career timeline -->
-      <div class="mt-16">
-        <h3
-          class="fade-up mb-10 text-lg font-semibold"
-          style="color: var(--text);"
-        >
-          Карьерный путь
-        </h3>
-        <Timeline />
-      </div>
+      <!-- Career timeline (only when experience_view = "timeline") -->
+      {useTimeline && (
+        <div class="mt-16">
+          <h3
+            class="fade-up mb-10 text-lg font-semibold"
+            style="color: var(--text);"
+          >
+            Карьерный путь
+          </h3>
+          <Timeline />
+        </div>
+      )}
 
       <!-- Skills -->
       <div class="mt-16">
@@ -196,16 +199,18 @@ const metaDescription = info.tagline;
       <Cases />
     </section>
 
-    <!-- ─── Опыт работы ──────────────────────────────────────────────────────── -->
-    <section id="experience" class="mx-auto max-w-5xl px-4 py-20 sm:px-6">
-      <h2
-        class="fade-up mb-12 text-2xl font-bold tracking-tight sm:text-3xl"
-        style="color: var(--text);"
-      >
-        Опыт работы
-      </h2>
-      <Experience />
-    </section>
+    <!-- ─── Опыт работы (only when experience_view = "cards") ──────────────── -->
+    {!useTimeline && (
+      <section id="experience" class="mx-auto max-w-5xl px-4 py-20 sm:px-6">
+        <h2
+          class="fade-up mb-12 text-2xl font-bold tracking-tight sm:text-3xl"
+          style="color: var(--text);"
+        >
+          Опыт работы
+        </h2>
+        <Experience />
+      </section>
+    )}
   </main>
 
   <Footer />
