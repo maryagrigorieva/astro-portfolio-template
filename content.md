@@ -5,20 +5,20 @@
 # ─────────────────────────────────────────────────────────────────────────────
 
 # name — ваше имя и фамилия (отображается в шапке и meta-заголовке страницы)
-name: "Иван Петров"
+name: "Григорьева Мария Владимировна"
 
 # role — должность или специализация (отображается под именем в Hero-секции)
 # Примеры: "Frontend-разработчик", "Product Manager", "QA-инженер"
-role: "Бизнес-аналитик"
+role: "Product Lead"
 
 # tagline — короткая фраза о вас (1–2 строки, не более 120 символов)
-tagline: "Анализ требований, моделирование процессов, внедрение цифровых решений"
+tagline: "Discovery и Delivery продуктов, анализ требований, моделирование процессов, внедрение цифровых решений"
 
 # photo — путь к вашей фотографии (замените файл src/assets/images/profile.jpg)
 photo: "src/assets/images/profile.jpg"
 
 # location — город и страна (необязательно, можно оставить пустым "")
-location: "Москва, Россия"
+location: "Санкт-Петербург, Россия/ удаленка remote"
 
 # experience_view — какой блок использовать для отображения опыта работы
 # "timeline" — вертикальный таймлайн в секции «О себе» (компактно, хронологически)
@@ -28,10 +28,10 @@ experience_view: "timeline"
 # contacts — ваши контакты для связи
 # Ненужные поля можно оставить пустыми (""), они не отобразятся
 contacts:
-  email: "example@email.com"
-  telegram: "@telegram_username"
+  email: "marya.grigorieva@email.com"
+  telegram: "@mary_grig"
   linkedin: "https://linkedin.com/in/username"
-  github: "https://github.com/username"
+  github: "https://github.com/maryagrigorieva"
 
 ---
 
