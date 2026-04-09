@@ -31,7 +31,7 @@
 Самый простой способ — через Netlify или Vercel. Оба сервиса бесплатны.
 Потребуется регистрация — можно войти через GitHub аккаунт в один клик.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alexzah-droid/astro-portfolio-template)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maryagrigorieva/astro-portfolio-template/)
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/alexzah-droid/astro-portfolio-template)
 
